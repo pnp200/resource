@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "c8fa873e-e0cb-42c3-8766-764814a8d552",
+		"name": "Mahgateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7454366"
+	},
+	"item": [
+		{
+			"name": "Sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/testmah/mah/gateway?msg=%7B%22security%22%3A1%2C%22version%22%3A1%2C%22msg%22%3A%7B%22MsgType%22%3A%22Sale%22%2C%22TxnType%22%3A%22PMT%22%2C%22AccNo%22%3A%225521159001186496%22%2C%22ProcessingCode%22%3A%22000000%22%2C%22TxnAmount%22%3A6.55%2C%22STAN%22%3A127%2C%22ExpDate%22%3A%222412%22%2C%22POSMode%22%3A%22012%22%2C%22NII%22%3A385%2C%22POSConditionCode%22%3A%2200%22%2C%22AcqID%22%3A%221%22%2C%22TID%22%3A%2200000011%22%2C%22MID%22%3A%22000001920200235%22%2C%22AdditionalAmt%22%3A5.55%2C%22BatchNo%22%3A13%2C%22InvoiceNo%22%3A%2273%22%2C%22TxnRef%22%3A%22MAH0000006983000073%22%2C%22POSTimeStamp%22%3A%2220200902170657%22%2C%22AppID%22%3A%22EMCIMC01%22%2C%22TxnCurrencyCode%22%3A458%2C%22InternalID%22%3A%22C7C11792%22%2C%22DeviceType%22%3A%22TERM%22%7D%7D",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"testmah",
+						"mah",
+						"gateway"
+					],
+					"query": [
+						{
+							"key": "msg",
+							"value": "%7B%22security%22%3A1%2C%22version%22%3A1%2C%22msg%22%3A%7B%22MsgType%22%3A%22Sale%22%2C%22TxnType%22%3A%22PMT%22%2C%22AccNo%22%3A%225521159001186496%22%2C%22ProcessingCode%22%3A%22000000%22%2C%22TxnAmount%22%3A6.55%2C%22STAN%22%3A127%2C%22ExpDate%22%3A%222412%22%2C%22POSMode%22%3A%22012%22%2C%22NII%22%3A385%2C%22POSConditionCode%22%3A%2200%22%2C%22AcqID%22%3A%221%22%2C%22TID%22%3A%2200000011%22%2C%22MID%22%3A%22000001920200235%22%2C%22AdditionalAmt%22%3A5.55%2C%22BatchNo%22%3A13%2C%22InvoiceNo%22%3A%2273%22%2C%22TxnRef%22%3A%22MAH0000006983000073%22%2C%22POSTimeStamp%22%3A%2220200902170657%22%2C%22AppID%22%3A%22EMCIMC01%22%2C%22TxnCurrencyCode%22%3A458%2C%22InternalID%22%3A%22C7C11792%22%2C%22DeviceType%22%3A%22TERM%22%7D%7D"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://airpostesthost.mobiepay.com.my",
+			"type": "string"
+		}
+	]
+}
