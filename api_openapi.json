@@ -1,0 +1,70 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "api",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "https://jsonblob.com"
+    }
+  ],
+  "paths": {
+    "/api/1073089485935493120": {
+      "get": {
+        "summary": "getBlobId",
+        "description": "getBlobId",
+        "operationId": "getblobid",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/jsonBlob": {
+      "post": {
+        "summary": "postBlob",
+        "description": "postBlob",
+        "operationId": "postblob",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "people": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "example": "bill"
+                    },
+                    "example": [
+                      "bill",
+                      "steve",
+                      "bob"
+                    ]
+                  }
+                }
+              },
+              "example": {
+                "people": [
+                  "bill",
+                  "steve",
+                  "bob"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
